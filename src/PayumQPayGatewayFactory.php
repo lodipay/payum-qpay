@@ -34,7 +34,7 @@ class PayumQPayGatewayFactory extends GatewayFactory
 
         if (false == $config['payum.api']) {
             $config['payum.default_options'] = [
-                'sandbox' => true,
+                'env' => 'sandbox',
                 'username' => '',
                 'password' => '',
                 'options' => [],
@@ -48,19 +48,19 @@ class PayumQPayGatewayFactory extends GatewayFactory
 
                 Assert::string($config['username']);
                 Assert::string($config['password']);
-                Assert::boolean($config['sandbox']);
                 Assert::string($config['invoiceCode']);
+                Assert::string($config['env']);
+
+                /** @var ?array<string, mixed> $options */
+                $options = $config['options'];
 
                 $api = new Api(
                     $config['username'],
                     $config['password'],
-                    $config['sandbox'] ? Env::SANDBOX : Env::PROD,
-                    $config['invoiceCode']
+                    Env::from($config['env']),
+                    $config['invoiceCode'],
+                    $options ?? []
                 );
-
-                /** @var ?array<string, mixed> $options */
-                $options = $config['options'];
-                $api->setup($options ?? []);
 
                 return $api;
             };
