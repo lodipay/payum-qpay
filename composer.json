@@ -1,5 +1,5 @@
 {
-  "name": "tsetsee/payum-qpay",
+  "name": "lodipay/payum-qpay",
   "type": "project",
   "description": "The Payum extension. Rapid extensino development",
   "keywords": [
@@ -15,13 +15,9 @@
   ],
   "require": {
     "payum/core": "^1.5",
-    "tsetsee/qpay-php-api": "^1.0",
-    "php-http/message-factory": "^1.1",
     "php-http/httplug": "^1.1",
-    "php-http/discovery": "^1.19",
-    "psr/http-factory-implementation": "*",
-    "http-interop/http-factory-guzzle": "^1.2",
-    "webmozart/assert": "^1.11"
+    "webmozart/assert": "^1.11",
+    "lodipay/qpay-php-api": "^1.0"
   },
   "require-dev": {
     "payum/core": "^1.5",
@@ -33,10 +29,7 @@
     "phpstan/phpstan": "^1.10"
   },
   "config": {
-    "bin-dir": "bin",
-    "allow-plugins": {
-      "php-http/discovery": true
-    }
+    "bin-dir": "bin"
   },
   "autoload": {
     "psr-4": {
