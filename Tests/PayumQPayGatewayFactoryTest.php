@@ -39,7 +39,7 @@ class PayumQPayGatewayFactoryTest extends AbstractGatewayFactoryTest
                 'username' => '',
                 'password' => '',
                 'options' => [],
-                'sandbox' => true,
+                'env' => 'sandbox',
             ],
             $config['payum.default_options']
         );
@@ -63,7 +63,7 @@ class PayumQPayGatewayFactoryTest extends AbstractGatewayFactoryTest
     public function testShouldThrowIfRequiredOptionsNotPassed(): void
     {
         $this->expectException(\LogicException::class);
-        $this->expectExceptionMessage('The username, password fields are required.');
+        $this->expectExceptionMessage('The username, password, invoiceCode fields are required.');
         $factory = new PayumQPayGatewayFactory();
 
         $factory->create();
@@ -80,6 +80,7 @@ class PayumQPayGatewayFactoryTest extends AbstractGatewayFactoryTest
             'sandbox' => true,
             'username' => 'test',
             'password' => 'pass1',
+            'invoiceCode' => 'INVOICECODE',
             'options' => [],
         ];
     }

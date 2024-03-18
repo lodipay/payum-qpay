@@ -45,7 +45,7 @@ class StatusActionTest extends AbstractActionTest
 
         $action->execute($request);
 
-        $this->assertTrue($request->isNew());
+        $this->assertTrue($request->isPending());
     }
 
     /**
