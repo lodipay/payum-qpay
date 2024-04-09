@@ -1,13 +1,13 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action;
+namespace Lodipay\PayumQPay\Action;
 
+use Lodipay\PayumQPay\Enum\PaymentStatus;
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Model\PaymentInterface;
 use Payum\Core\Request\Convert;
-use Tsetsee\PayumQPay\Enum\PaymentStatus;
 
 class ConvertPaymentAction implements ActionInterface
 {

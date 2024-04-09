@@ -1,16 +1,16 @@
 <?php
 
-namespace Tsetsee\PayumQPay;
+namespace Lodipay\PayumQPay;
 
-use Tsetsee\Qpay\Api\DTO\CheckPaymentRequest;
-use Tsetsee\Qpay\Api\DTO\CheckPaymentResponse;
-use Tsetsee\Qpay\Api\DTO\CreateInvoiceRequest;
-use Tsetsee\Qpay\Api\DTO\CreateInvoiceResponse;
-use Tsetsee\Qpay\Api\DTO\GetInvoiceResponse;
-use Tsetsee\Qpay\Api\DTO\Offset;
-use Tsetsee\Qpay\Api\Enum\Env;
-use Tsetsee\Qpay\Api\Enum\ObjectType;
-use Tsetsee\Qpay\Api\QPayApi;
+use Lodipay\Qpay\Api\DTO\CheckPaymentRequest;
+use Lodipay\Qpay\Api\DTO\CheckPaymentResponse;
+use Lodipay\Qpay\Api\DTO\CreateInvoiceRequest;
+use Lodipay\Qpay\Api\DTO\CreateInvoiceResponse;
+use Lodipay\Qpay\Api\DTO\GetInvoiceResponse;
+use Lodipay\Qpay\Api\DTO\Offset;
+use Lodipay\Qpay\Api\Enum\Env;
+use Lodipay\Qpay\Api\Enum\ObjectType;
+use Lodipay\Qpay\Api\QPayApi;
 
 class Api
 {

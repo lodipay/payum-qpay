@@ -1,13 +1,13 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action;
+namespace Lodipay\PayumQPay\Action;
 
+use Lodipay\PayumQPay\Action\Api\BaseApiAwareAction;
+use Lodipay\PayumQPay\Enum\PaymentStatus;
+use Lodipay\PayumQPay\Request\CheckPayment;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Request\Sync;
-use Tsetsee\PayumQPay\Action\Api\BaseApiAwareAction;
-use Tsetsee\PayumQPay\Enum\PaymentStatus;
-use Tsetsee\PayumQPay\Request\CheckPayment;
 
 final class SyncAction extends BaseApiAwareAction
 {

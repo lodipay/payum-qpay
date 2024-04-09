@@ -2,11 +2,11 @@
 
 namespace Tests\Action;
 
+use Lodipay\PayumQPay\Api;
 use Payum\Core\GatewayInterface;
 use Payum\Core\Security\TokenInterface;
 use Payum\Core\Tests\GenericActionTest;
 use PHPUnit\Framework\MockObject\MockObject;
-use Tsetsee\PayumQPay\Api;
 
 /**
  * Class AbstractActionTest.

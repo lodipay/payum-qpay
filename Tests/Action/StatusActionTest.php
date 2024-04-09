@@ -2,9 +2,9 @@
 
 namespace Tests\Action;
 
+use Lodipay\PayumQPay\Action\StatusAction;
+use Lodipay\PayumQPay\Enum\PaymentStatus;
 use Payum\Core\Request\GetHumanStatus;
-use Tsetsee\PayumQPay\Action\StatusAction;
-use Tsetsee\PayumQPay\Enum\PaymentStatus;
 
 class StatusActionTest extends AbstractActionTest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action;
+namespace Lodipay\PayumQPay\Action;
 
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\Bridge\Spl\ArrayObject;

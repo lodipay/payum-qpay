@@ -1,18 +1,18 @@
 <?php
 
-namespace Tsetsee\PayumQPay;
+namespace Lodipay\PayumQPay;
 
+use Lodipay\PayumQPay\Action\Api\CheckPaymentAction;
+use Lodipay\PayumQPay\Action\Api\CreateInvoiceAction;
+use Lodipay\PayumQPay\Action\CaptureAction;
+use Lodipay\PayumQPay\Action\ConvertPaymentAction;
+use Lodipay\PayumQPay\Action\ConvertQPayAction;
+use Lodipay\PayumQPay\Action\NotifyAction;
+use Lodipay\PayumQPay\Action\StatusAction;
+use Lodipay\PayumQPay\Action\SyncAction;
+use Lodipay\Qpay\Api\Enum\Env;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\GatewayFactory;
-use Tsetsee\PayumQPay\Action\Api\CheckPaymentAction;
-use Tsetsee\PayumQPay\Action\Api\CreateInvoiceAction;
-use Tsetsee\PayumQPay\Action\CaptureAction;
-use Tsetsee\PayumQPay\Action\ConvertPaymentAction;
-use Tsetsee\PayumQPay\Action\ConvertQPayAction;
-use Tsetsee\PayumQPay\Action\NotifyAction;
-use Tsetsee\PayumQPay\Action\StatusAction;
-use Tsetsee\PayumQPay\Action\SyncAction;
-use Tsetsee\Qpay\Api\Enum\Env;
 use Webmozart\Assert\Assert;
 
 class PayumQPayGatewayFactory extends GatewayFactory

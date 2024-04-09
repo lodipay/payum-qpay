@@ -1,11 +1,11 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action\Api;
+namespace Lodipay\PayumQPay\Action\Api;
 
+use Lodipay\PayumQPay\Enum\PaymentStatus;
+use Lodipay\PayumQPay\Request\CheckPayment;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
-use Tsetsee\PayumQPay\Enum\PaymentStatus;
-use Tsetsee\PayumQPay\Request\CheckPayment;
 
 final class CheckPaymentAction extends BaseApiAwareAction
 {

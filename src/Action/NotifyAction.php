@@ -1,13 +1,13 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action;
+namespace Lodipay\PayumQPay\Action;
 
+use Lodipay\PayumQPay\Action\Api\BaseApiAwareAction;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Reply\HttpResponse;
 use Payum\Core\Request\Notify;
 use Payum\Core\Request\Sync;
-use Tsetsee\PayumQPay\Action\Api\BaseApiAwareAction;
 
 class NotifyAction extends BaseApiAwareAction
 {

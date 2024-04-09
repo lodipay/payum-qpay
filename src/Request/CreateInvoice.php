@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Request;
+namespace Lodipay\PayumQPay\Request;
 
 use Payum\Core\Request\Generic;
 

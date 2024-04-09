@@ -18,4 +18,4 @@ $rc = new ReflectionClass(GatewayInterface::class);
 $coreDir = dirname($rc->getFileName()).'/Tests';
 
 $loader->add('Payum\Core\Tests', $coreDir);
-$loader->add('Tsetsee\PayumQPay\Tests', $coreDir);
+$loader->add('Lodipay\PayumQPay\Tests', $coreDir);

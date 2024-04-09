@@ -2,8 +2,8 @@
 
 namespace Tests;
 
+use Lodipay\PayumQPay\PayumQPayGatewayFactory;
 use Payum\Core\Tests\AbstractGatewayFactoryTest;
-use Tsetsee\PayumQPay\PayumQPayGatewayFactory;
 
 class PayumQPayGatewayFactoryTest extends AbstractGatewayFactoryTest
 {

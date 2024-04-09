@@ -1,13 +1,13 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action\Api;
+namespace Lodipay\PayumQPay\Action\Api;
 
+use Lodipay\PayumQPay\Api;
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\ApiAwareInterface;
 use Payum\Core\ApiAwareTrait;
 use Payum\Core\GatewayAwareInterface;
 use Payum\Core\GatewayAwareTrait;
-use Tsetsee\PayumQPay\Api;
 
 abstract class BaseApiAwareAction implements ActionInterface, GatewayAwareInterface, ApiAwareInterface
 {

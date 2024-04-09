@@ -1,14 +1,14 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Action\Api;
+namespace Lodipay\PayumQPay\Action\Api;
 
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\RequestException;
+use Lodipay\PayumQPay\Enum\PaymentStatus;
+use Lodipay\PayumQPay\Request\CreateInvoice;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Request\Convert;
-use Tsetsee\PayumQPay\Enum\PaymentStatus;
-use Tsetsee\PayumQPay\Request\CreateInvoice;
 
 final class CreateInvoiceAction extends BaseApiAwareAction
 {

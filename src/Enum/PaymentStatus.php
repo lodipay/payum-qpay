@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\PayumQPay\Enum;
+namespace Lodipay\PayumQPay\Enum;
 
 enum PaymentStatus: int
 {
